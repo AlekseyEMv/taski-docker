@@ -83,7 +83,7 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}          
       - name: Push to DockerHub
-        # Одновременный билд и пуш образа в Docker Hub
+        # Одновременный билд и пуш образа в Docker Hub из файла
         uses: docker/build-push-action@v4
         with:
           # Параметр context: ./backend/ указывает, что нужный Dockerfile
